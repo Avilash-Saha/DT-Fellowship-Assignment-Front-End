@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Thought</title>
+      <script src="content1.js"></script>
+      <script src="assets/javascript/responsive.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div>
+            <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="deep_thought">
+         <ul>
+            <li>
+                <a href="#">
+                    
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                   
+                        <i class="fa fa-binoculars" aria-hidden="true"></i>
+                   
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  
+                        <i class="fa fa-screwdriver-wrench" aria-hidden="true"></i>
+                   
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    
+                        <i class="fa-solid fa-bell" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    
+                        <i class="fa-solid fa-face-meh-blank" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            <li class="dropdown">
+              
+                    <button class="dropbtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <div class="dropdown-content">
+                      <a href="#">Logout</a>
+                      <a href="#">Parent Dashboard</a>
+                      <a href="#">Batches</a>
+                      <a href="#">Cohorts</a>
+                      <a href="#">Sessions</a>
+                      <a href="#">Articles</a>
+                      <a href="#">Quizzes</a>
+                    </div>
+    
+            </li>
+         </ul>
+        </div>
+    </nav>
+</header>
+
+    <div class="heading">
+        <span><h1>Technical Project Management</h1></span>
+        <button class="submit">Submit Project</button>
+    </div>
+
+<div class="content">
+    <div class="Intro">
+        <h3>Explore the world of management</h3>
+        <p>As a project manager, you play an important role in leading a project through initiation, planning, execution, monitoring, controlling and completion. How? Do you want to manage each and every step of your life?</p>
+    </div>
+    <div class="Assets-container" id="Asset_contain">
+    </div>
+    <div>
+        <div id="journeyBoardContainer" class="asset modified wrapped">
+            <div class="asset-title height"><button onclick="shrinkExpand()" id="arrowButton"><i id="arrow" class="fa-solid fa-arrow-right"></i></button><p id="journeyBoardTitle" class="wrap">Journey Board</p></div>
+            <div id="journeyBoardDescription" class="asset-description mod wrap">
+                <ul id="Journey-Board">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="noticeBoardContainer" class="asset notice toggleWidth">
+            <div class="asset-title width"><button onclick=toggleNotice()><i id="plus_x" class="fa-solid fa-plus"></i></button><br><p>N<br>o<br>t<br>i<br>c<br>e<br><br>B<br>o<br>a<br>r<br>d</p></div>
+            <div id="noticeBoardDescription" class="asset-description mod noticeDescriptionUpdate"></div>
+
+        </div>
+    </div>
+    <div>
+        <ul class="utility">
+            <li><button><img src="assets/images/question-mark.png"></button></li>
+            <li><a href="#"><img class="links" src="assets/images/meeting.png"></a></li>
+            <li><a href="#"><img class="links" src="assets/images/schedule.png"></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
